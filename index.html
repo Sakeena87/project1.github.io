@@ -1,0 +1,408 @@
+<!doctype html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <title>New Document</title>
+        <meta Name="Generator" Content="EditPlus">
+        <meta Name="Author" Content="">
+        <meta Name="Keywords" Content="">
+        <meta Name="Description"Content="">
+        <link rel="stylesheet" href="int2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--AOS-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!--AOS-->
+        <script>
+            function stickyMenu(){
+                var sticky=document.getElementById("sticky")
+                if(window.pageYOffset > 20){
+                    sticky.classList.add("sticky");
+                    sticky.classList.remove("menu-ul");
+                }
+                else{
+                    sticky.classList.remove("sticky");
+                }
+            }
+            window.onscroll=function(){
+                stickyMenu();
+            }
+        </script>
+        <style>
+            
+/* CSS */
+
+body{
+    margin: 0;
+}
+
+.top-background, .appointment-img{
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu{
+    text-align: center;
+    font-size: 18px;
+}
+
+.menu-ul{
+    padding: 10px;
+}
+
+.menu-ul li{
+    display: inline-block;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+    padding: 10px 30px;
+}
+
+a{
+    border-bottom: 1px solid transparent;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    border-bottom: 1px solid white;
+}
+
+.sticky{
+    background: #0f4c75;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.sticky ul{
+    padding: 0;
+    margin: 10px;
+}
+
+.page-title{
+    text-align: center;
+    font-size: 50px;
+    padding: 200px;
+    color: white;
+    letter-spacing: 10px;
+    text-shadow: 0 0 5px #0f4c75;
+}
+
+.description{
+    font-variant: small-caps;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.page-blocks{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title{
+    letter-spacing: 10px;
+    color: #0f4c75;
+}
+
+.design img{
+    height: 35%;
+    max-width: 95%;
+    margin: 15px;
+}
+
+.more-design-btn{
+    background: transparent;
+    border: 2px solid #0f4c75;
+    color: #0f4c75;
+    font-weight: 300;
+    padding: 10px;
+    margin: 10px;
+    letter-spacing: 2px;
+}
+
+.more-design-btn:hover{
+    background: #0f4c75;
+    color: white;
+    transition: all 0.5s;
+}
+
+.flex-block{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.why-us-flex-item{
+    background: #0f4c75;
+    color: white;
+    width: 20%;
+    padding: 40px;
+    margin: 20px;
+}
+
+.block-label{
+    font-variant: small-caps;
+    font-size: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+.block-description{
+    text-align: justify;
+}
+
+.block-number{
+    font-weight: bold;
+    font-size: 50px;
+    padding: 20px;
+}
+
+.appointment-flex-item{
+    background: #0f4c75;
+    color: white;
+    height: 450px;
+    width: 45%;
+    padding: 0px;
+    margin: 20px 0px;
+    overflow: hidden;
+}
+
+.appointment-img{
+    background-image: url('lobby.jpg');  
+    background-position: fixed;  
+}
+
+.appointment-text{
+    padding: 200px 20px;
+    font-size: 50px;
+    background: rgba(0,0,0,0.5);
+}
+
+.appointment-form{
+    padding: 20px;
+}
+
+.appointment-form input, textarea{
+    width: 60%;
+    max-width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    text-align: center;
+    color: #0f4c75;
+    font-size: 16px;
+}
+
+.appointment-form textarea{
+    height: 100px;
+    max-height: 100px;
+    max-width: 60%;
+    overflow-y: scroll;
+}
+
+.appointment-btn{
+    border: 2px solid #0f4c75;
+    background: transparent;
+    color: white;
+    padding: 15px;
+    outline: none;
+}
+
+.appointment-btn:hover{
+    background: white;
+    color: #0f4c75;
+}
+
+.footer{
+    background: #0f4c75;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.locations{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    min-width: 27%;
+    letter-spacing: 5px;
+    font-variant: small-caps;
+    padding: 20px;
+}
+
+.address{
+    font-weight: lighter;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.social-media-icons i{
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.copyrights{
+    font-size: 16px;
+    text-align: center;
+    margin: 15px;
+}
+        </style>
+
+    </head>
+    <body>
+        <div class="top-background">
+            <div class="menu" id="sticky">
+                <ul class="menu-ul">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Designs</a></li>
+                    <li><a href="#">Why Us</a></li>
+                    <li><a href="#">Appointment</a></li>
+                </ul>
+            </div>
+            <div class="page-title">INTERIOR DESIGNS
+                <div class="description">
+                    Let Us Make Your Home HEAVEN
+                </div>
+
+            </div>
+        </div>
+        <!--Our Designs block-->
+        <div class="page-blocks">
+            <div class="title" data-aos="fade-right">
+                OUR DESIGNS
+            </div>
+            <div class="design">
+                <img src="living.jpg" data-aos="fade-up">
+                <img src="dinning room.jpg" data-aos="fade-up">
+                <img src="kitchen.jpg"data-aos="fade-up">
+                <img src="bedroom.jpg" data-aos="fade-up">
+                <img src="light.jpg" data-aos="fade-up">
+                <img src="interior.jpg" data-aos="fade-up">
+                <img src="living room.jpg" data-aos="fade-up">
+                <img src="bath.jpg" data-aos="fade-up">
+                <img src="library-5219747_1920.jpg" data-aos="fade-up">
+                
+            </div>
+            <button class="more-designs-btn" data-aos="fade-up">More Designs</button>
+        </div>
+        <!--Why Us Block-->
+        <div class="page-blocks">
+            <div class="title"data-aos="fade-left">
+                WHY US
+            </div>
+            <div class="flex-block">
+                <div class="Why-Us-Flex-Item" data-aos="fade-up">
+                    <div class="block-label">
+                        Our Projects
+                    </div>
+                    <div class="block-description">Our expert designers are well trained and euipped with major modern interior designing tools that help us provide you with innovative solutions and unique.Interior decor plans that stand out.
+                    </div>                        
+                </div>
+
+                <div class="Why-Us-Flex-Item" data-aos="fade-up">
+                    <div class="block-label">
+                            Our Designs
+                    </div>                        
+                    <div class="block-description">Our expert designers are well trained and euipped with major modern interior designing tools that help us provide you with innovative solutions and unique.Interior decor plans that stand out.
+                    </div>                            
+                </div>
+
+
+                <div class="Why-Us-Flex-Item" data-aos="fade-up">
+                    <div class="block-label">
+                        Our Services
+                        </div>
+                        <div class="block-description">Our expert designers are well trained and euipped with major modern interior designing tools that help us provide you with innovative solutions and unique.Interior decor plans that stand out.                           
+                        </div>                        
+                </div>
+
+
+                <div class="Why-Us-Flex-Item" data-aos="fade-up">
+                    <div class="block-label">
+                        Finished Projects
+                    </div>
+                        <div class="block-number">
+                            147,987
+                        </div>
+                </div>
+
+
+                <div class="Why-Us-Flex-Item" data-aos="fade-up">
+                    <div class="block-label">
+                        Upcoming Projects
+                    </div>
+                        <div class="block-number">
+                            251,907
+                        </div>
+                </div>
+            </div>
+        </div>
+<!--Appointment blocks-->  
+<div class="page-blocks">
+    <div class="title" data-aos="zoom-in">
+        APPOINTMENT
+    </div>
+    <div class="flex-blocks">
+        <div class="appointment-flex-item" data-aos="fade-right">
+            <div class="appointment-img">
+                <div class="appointment-text">
+                    Make An Appointment Today
+                </div>
+            </div>
+        </div>
+
+        <div class="appointment-flex-item" data-aos="fade-left">
+            <form class="appointment-form">
+                <input type="text" placeholder="Name"><br>
+                <input type="text" placeholder="Mobile"><br>
+                <input type="text" placeholder="Email"><br>
+                <input type="text" placeholder="City"><br>
+                <textarea type="text" placeholder="Requirment"></textarea><br><br>
+                <button class="appointment-btn">Make an Appointment</button>
+            </form> 
+        </div>       
+    </div>
+</div>               
+    <br>
+    <!--footer block-->
+    <div class="footer">
+        <div class="locations">
+            <div>US LOCATION<br>
+                <div class="address">1121 street Name<br>City Name<br>Zip 0000</div>
+                </div>
+            </div>
+            <div class="locations">
+                <div>UAE LOCATION<br>
+                    <div class="address">1121 street Name<br>City Name<br>Zip 0000</div>
+                    </div>
+                </div>
+                <div class="locations">
+                    <div>UK LOCATION<br>
+                        <div class="address">1121 street Name<br>City Name<br>Zip 0000</div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-telegram"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>                    
+        </div>           
+    </div>
+    <br>
+    <center>
+    <div class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i>2020 By Programmers Web Drive
+    </div>
+    </center> 
+    </body>
+</html>
+<script>
+    AOS.init({
+        duartion:1400,
+    });
+</script>
